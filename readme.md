@@ -76,6 +76,8 @@ docker-compose --version
 ```bash
 mkdir -p ~/.n8n
 cd ~/.n8n
+sudo chown -R 1000:1000 /root/.n8n
+sudo chmod -R 755 /root/.n8n
 ```
 
 ### 5. Docker Compose Dosyası Oluşturma
