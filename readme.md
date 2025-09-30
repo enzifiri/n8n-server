@@ -29,14 +29,25 @@ https://dnschecker.org/
 Eğer dns ayarı yapmanıza rağmen hala görseldeki gibi gözüküyorsa 1 saat beklemeniz gerekiyor. Yeşil tiki görmeden scripti çalıştırmayın.
 <img width="582" height="147" alt="image" src="https://github.com/user-attachments/assets/7aad1839-462d-491d-a8e3-90fb74ead77d" />
 
+## ⏰ DNS Yayılma Süresi
+
+DNS kayıtlarının global olarak yayılması zaman alır. İşte gerçekçi beklentiler:
+
+| Zaman Aralığı | Yayılma Olasılığı | Açıklama |
+|---------------|-------------------|----------|
+| 5-10 dakika | %30 | İyi DNS sağlayıcıları için ideal süre |
+| 15-30 dakika | %50 | En yaygın ve normal süre |
+| 1-2 saat | %15 | Bazı DNS sunucuları için beklenen süre |
+| 24-48 saat | %5 | Maksimum TTL değeri için en uzun süre |
 ## ⚡ Hızlı Kurulum (DNS AYARI YAPMADAN ÇALIŞTIRMAYIN)
 
 ```bash
+sudo ufw enable
 sudo ufw allow 'Nginx Full'
 sudo ufw allow 22/tcp
 sudo ufw allow 80
 sudo ufw allow 443
-sudo ufw enable
+
 wget https://raw.githubusercontent.com/enzifiri/n8n-auto-setup/main/setup.sh
 chmod +x setup.sh
 sudo ./setup.sh
