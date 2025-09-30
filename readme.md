@@ -97,25 +97,17 @@ services:
     ports:
       - "5678:5678"
     environment:
-      # Basic Authentication
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=admin
-      - N8N_BASIC_AUTH_PASSWORD=degistir123
-      
-      # Host Configuration
+      - N8N_BASIC_AUTH_PASSWORD=SifreniziBuraDegistirin123!
       - N8N_HOST=localhost
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
-      
-      # Webhook URL
       - WEBHOOK_URL=http://localhost:5678/
-      
-      # Timezone
       - GENERIC_TIMEZONE=Europe/Istanbul
       - TZ=Europe/Istanbul
-      
     volumes:
-      - ~/.n8n:/root/.n8n
+      - /root/.n8n:/home/node/.n8n
 ```
 
 **Önemli:** `N8N_BASIC_AUTH_PASSWORD` değerini mutlaka güçlü bir şifre ile değiştirin!
