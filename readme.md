@@ -93,23 +93,50 @@ version: '3.8'
 
 services:
   n8n:
-    image: n8nio/n8n
+    image: n8nio/n8n:latest
     container_name: n8n
     restart: unless-stopped
     ports:
       - "5678:5678"
     environment:
+      # Authentication
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=skooldoa
       - N8N_BASIC_AUTH_PASSWORD=asd123asd
+      - N8N_SECURE_COOKIE=false
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - N8N_RUNNERS_ENABLED=true
+      - N8N_RUNNERS_MODE=internal
+      - DB_SQLITE_POOL_SIZE=5
+      - N8N_PAYLOAD_SIZE_MAX=100
+      - EXECUTIONS_TIMEOUT=300
+      - EXECUTIONS_TIMEOUT_MAX=600
+      - N8N_DEFAULT_BINARY_DATA_MODE=filesystem
+      - WEBHOOK_TIMEOUT=300
+      
+      # N8N settings (Local)
       - N8N_HOST=localhost
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
+      - NODE_ENV=production
+      - N8N_CORS_ORIGIN=*
       - WEBHOOK_URL=http://localhost:5678/
+      
+      # Timezone
       - GENERIC_TIMEZONE=Europe/Istanbul
       - TZ=Europe/Istanbul
+      
     volumes:
-      - /root/.n8n:/home/node/.n8n
+      - n8n_data:/home/node/.n8n
+    networks:
+      - n8n-network
+
+volumes:
+  n8n_data:
+
+networks:
+  n8n-network:
+    driver: bridge
 ```
 
 **Önemli:** `N8N_BASIC_AUTH_PASSWORD` değerini mutlaka güçlü bir şifre ile değiştirin!
