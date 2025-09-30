@@ -1,13 +1,14 @@
 
 # n8n Docker Kurulum Rehberi (Debian 12)
 
-Bu repo, Debian 12 sunucunuza Docker kullanarak n8n kurulumu için adım adım talimatlar içerir.
+Bu repo, Debian 12/ Ubuntu 22.04 24.04 sunucunuza Docker kullanarak n8n kurulumu için adım adım talimatlar içerir.
 
 ## Gereksinimler
 
-- Debian 12 sunucu
+- Debian 12 / Ubuntu 22,24 sunucu
 - Root veya sudo yetkisi
-- İnternet bağlantısı
+- Mobaxterm (SSH Uygulaması)
+https://mobaxterm.mobatek.net/download-home-edition.html
 
 ## Kurulum Adımları
 
