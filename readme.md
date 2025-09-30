@@ -78,25 +78,15 @@ mkdir -p ~/.n8n
 cd ~/.n8n
 ```
 
-### 5. Docker Compose Dosyasını İndirin
-
-Bu repository'yi klonlayın:
-
-```bash
-git clone https://github.com/KULLANICI_ADINIZ/n8n-docker-kurulum.git
-cd n8n-docker-kurulum
-```
-
-veya `docker-compose.yml` dosyasını manuel olarak oluşturun (aşağıdaki bölüme bakın).
-
-### 6. Yapılandırma
-
-`docker-compose.yml` dosyasına alttaki içeriği yapıştırın
+### 5. Docker Compose Dosyası Oluşturma
 
 ```bash
 nano docker-compose.yml
 ```
-```
+
+Aşağıdaki içeriği yapıştırın:
+
+```yaml
 version: '3.8'
 
 services:
@@ -120,22 +110,17 @@ services:
       # Webhook URL
       - WEBHOOK_URL=http://localhost:5678/
       
-      # Timezone (Opsiyonel)
+      # Timezone
       - GENERIC_TIMEZONE=Europe/Istanbul
       - TZ=Europe/Istanbul
-      
-      # Execution Configuration (Opsiyonel)
-      - EXECUTIONS_PROCESS=main
-      - EXECUTIONS_TIMEOUT=3600
-      - EXECUTIONS_TIMEOUT_MAX=7200
       
     volumes:
       - ~/.n8n:/home/node/.n8n
 ```
-**Önemli:** Aşağıdaki değerleri mutlaka değiştirin:
-- `N8N_BASIC_AUTH_PASSWORD`: Güçlü bir şifre belirleyin
-- `N8N_HOST`: Eğer bir domain kullanıyorsanız buraya girin
-- `WEBHOOK_URL`: Eğer bir domain kullanıyorsanız buraya girin
+
+**Önemli:** `N8N_BASIC_AUTH_PASSWORD` değerini mutlaka güçlü bir şifre ile değiştirin!
+
+Dosyayı kaydedin (CTRL+X, sonra Y, sonra Enter).
 
 ### 7. n8n'i Başlatın
 
