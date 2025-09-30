@@ -42,6 +42,7 @@ DNS kayıtlarının global olarak yayılması zaman alır. İşte gerçekçi bek
 ## ⚡ Hızlı Kurulum (DNS AYARI YAPMADAN ÇALIŞTIRMAYIN)
 
 ```bash
+apt install ufw
 sudo ufw enable
 sudo ufw allow 'Nginx Full'
 sudo ufw allow 22/tcp
