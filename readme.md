@@ -115,7 +115,7 @@ services:
       - TZ=Europe/Istanbul
       
     volumes:
-      - ~/.n8n:/home/node/.n8n
+      - ~/.n8n:/root/.n8n
 ```
 
 **Önemli:** `N8N_BASIC_AUTH_PASSWORD` değerini mutlaka güçlü bir şifre ile değiştirin!
