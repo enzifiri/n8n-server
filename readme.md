@@ -50,7 +50,8 @@ sudo ufw allow 22/tcp
 sudo ufw allow 80
 sudo ufw allow 443
 
-wget https://raw.githubusercontent.com/enzifiri/n8n-auto-setup/main/setup.sh
+git clone https://github.com/enzifiri/n8n-server
+cd n8n-server
 chmod +x setup.sh
 sudo ./setup.sh
 ```
