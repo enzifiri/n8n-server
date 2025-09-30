@@ -98,8 +98,8 @@ services:
       - "5678:5678"
     environment:
       - N8N_BASIC_AUTH_ACTIVE=true
-      - N8N_BASIC_AUTH_USER=admin
-      - N8N_BASIC_AUTH_PASSWORD=SifreniziBuraDegistirin123!
+      - N8N_BASIC_AUTH_USER=skooldoa
+      - N8N_BASIC_AUTH_PASSWORD=asd123asd
       - N8N_HOST=localhost
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
