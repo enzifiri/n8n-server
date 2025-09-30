@@ -2,21 +2,12 @@
 
 Tek komutla n8n'i Docker, Nginx reverse proxy ve SSL sertifikası ile birlikte kurun!
 
-## 🚀 Özellikler
-
-- ✅ Docker ve Docker Compose otomatik kurulumu
-- ✅ n8n son sürümü kurulumu
-- ✅ Nginx reverse proxy yapılandırması
-- ✅ Let's Encrypt SSL sertifikası (ücretsiz HTTPS)
-- ✅ Otomatik firewall yapılandırması
-- ✅ Production-ready ayarlar
-- ✅ Tek komutla kurulum
 
 ## 📋 Gereksinimler
 
 - Debian 12 (veya Ubuntu 20.04+)
-- Root veya sudo yetkisi
-- Bir domain adı (örn: example.com)
+- Bir domain adı (örn: example.com) https://www.namecheap.com/
+- MobaxTerm uygulaması https://mobaxterm.mobatek.net/download-home-edition.html
 - Domain'in DNS A kaydı sunucunuza yönlendirilmiş olmalı
 
 ## 🌍 DNS Ayarları
@@ -36,7 +27,7 @@ dig example.xyz
 # veya
 nslookup example.xyz
 ```
-## ⚡ Hızlı Kurulum
+## ⚡ Hızlı Kurulum (DNS AYARI YAPMADAN ÇALIŞTIRMAYIN)
 
 ```bash
 sudo ufw allow 'Nginx Full'
