@@ -21,12 +21,14 @@ Değer: SUNUCU_IP_ADRESI
 TTL: 3600 (veya otomatik)
 ```
 
-DNS kontrolü:
-```bash
-dig example.xyz
-# veya
-nslookup example.xyz
-```
+## DNS kontrolü:
+
+Linke tıklayın ve Domain adresinizi girip kontrol edin, eğer yeşil ikon var ve sunucu ipniz yazıyorsa başarılıdır.
+https://dnschecker.org/
+
+Eğer dns ayarı yapmanıza rağmen hala görseldeki gibi gözüküyorsa 1 saat beklemeniz gerekiyor. Yeşil tiki görmeden scripti çalıştırmayın.
+<img width="582" height="147" alt="image" src="https://github.com/user-attachments/assets/7aad1839-462d-491d-a8e3-90fb74ead77d" />
+
 ## ⚡ Hızlı Kurulum (DNS AYARI YAPMADAN ÇALIŞTIRMAYIN)
 
 ```bash
