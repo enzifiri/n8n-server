@@ -199,7 +199,7 @@ ufw reload
 
 # SSL sertifikası al
 echo ""
-echo -e "${GREEN}SSL sertifikası alınıyor...${NC}"
+echo -e "${GREEN}SSL sertifikası alınıyor... 2 dakika sürebilir.${NC}"
 certbot --nginx -d ${DOMAIN} --non-interactive --agree-tos --email ${EMAIL} --redirect
 
 # Kurulum tamamlandı
