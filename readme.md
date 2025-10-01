@@ -1,6 +1,5 @@
 # n8n Otomatik Kurulum Scripti
 
-İki adımda n8n kurun: Önce temel kurulum, sonra domain ekleyin!
 
 ## 📋 Gereksinimler / Maliyetler
 
@@ -53,7 +52,7 @@ TTL: Auto
 [dnschecker.org](https://dnschecker.org) adresinde domain'inizi kontrol edin.
 
 ✅ **Yeşil tik ve sunucu IP'niz görünüyorsa** → Domain yapılandırmasına geçebilirsiniz  
-❌ **Kırmızı X görünüyorsa** → 30-60 dakika bekleyin
+❌ **Kırmızı X görünüyorsa** → 30-60 dakika bekleyin (Bazen 24-48 saat sürebiliyor bu normal)
 
 <img width="583" height="199" alt="image" src="https://github.com/user-attachments/assets/e2c87d13-1f9a-4fba-b073-af6eb6a0ebe3" />
 
@@ -102,54 +101,6 @@ cd /opt/n8n && docker-compose pull && docker-compose up -d
 # Durum kontrolü
 docker ps
 ```
-
-## 🐛 Sorun Giderme
-
-### Adım 1 Sorunları (n8n Kurulumu)
-
-**Container başlamıyor:**
-```bash
-cd /opt/n8n
-docker-compose logs
-```
-
-**Port 5678'e erişilemiyor:**
-```bash
-sudo ufw status
-sudo ufw allow 5678/tcp
-```
-
-### Adım 2 Sorunları (Domain + SSL)
-
-**DNS hatası:**
-```bash
-# DNS kontrolü
-dig +short yourdomain.com
-
-# Bekleme süresi: 30-60 dakika
-```
-
-**SSL sertifika hatası:**
-```bash
-# Portları kontrol edin
-sudo ufw status
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-
-# Manuel SSL denemesi
-sudo certbot --nginx -d yourdomain.com
-```
-
-**Nginx hatası:**
-```bash
-sudo systemctl status nginx
-sudo nginx -t
-```
-
-## 📚 Faydalı Linkler
-
-- [n8n Dokümantasyonu](https://docs.n8n.io/)
-- [n8n Community](https://community.n8n.io/)
 
 ## 📄 Lisans
 
