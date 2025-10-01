@@ -7,7 +7,9 @@
 - Debian 12 veya Ubuntu 20.04+
 - MobaxTerm → [İndir](https://mobaxterm.mobatek.net/download-home-edition.html)
 - **Domain için:** [Namecheap'den domain alın](https://www.namecheap.com/)
-
+- **Server için*** [Netcuptan kirala N8N'yi 20€'ya 6 ay kullan](https://www.netcup.com/en)
+- **Netcup indirim kodları** : (SINIRLI SAYIDA)
+36nc17592432444 36nc17592432443 36nc17592432442 36nc17592432441 36nc17592432440 36nc17593223300 36nc17593223301 36nc17593223302 36nc17593223303 36nc17593223304 36nc17593223305 36nc17593223306  36nc17593223307 36nc17593223308 36nc17593223309
 ## 🚀 Adım 1: n8n Kurulumu (Zorunlu)
 
 MobaxTerm ile sunucunuza bağlanın ve şu komutları çalıştırın:
