@@ -61,8 +61,8 @@ TTL: Auto
 
 ```bash
 cd n8n-server
-chmod +x configure-domain.sh
-sudo ./configure-domain.sh
+chmod +x domain.sh
+sudo ./domain.sh
 ```
 
 **Script sizden soracak:**
