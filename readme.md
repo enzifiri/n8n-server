@@ -36,8 +36,10 @@ Domain ile HTTPS kullanmak istiyorsanız:
 
 ### 2.1 DNS Ayarları Yapın
 
-Domain sağlayıcınızın panelinden A kaydı ekleyin:
 
+Domain sağlayıcınızın panelinden A kaydı ekleyin:
+- namecheaptan aldıysanız alttaki urldeki DOMAINADRESINIZ kısmını değiştirin (skoolcommunity.xyz gibi)
+https://ap.www.namecheap.com/Domains/DomainControlPanel/DOMAINADRESINIZ/advancedns
 ```
 Tip: A Record
 Host: @ 
