@@ -15,10 +15,6 @@
 MobaxTerm ile sunucunuza bağlanın ve şu komutları çalıştırın:
 
 ```bash
-apt install git ufw -y
-sudo ufw --force enable
-sudo ufw allow 22/tcp
-sudo ufw allow 5678/tcp
 git clone https://github.com/enzifiri/n8n-server
 cd n8n-server
 chmod +x setup.sh
@@ -30,6 +26,8 @@ sudo ./setup.sh
 - n8n şifresi
 
 **Kurulum sonrası erişim:** `http://SUNUCU_IP:5678`
+
+**Girdiğiniz E posta ve Şifreyi unutmayın**
 
 ## 🌐 Adım 2: Domain + SSL Ekleme (Opsiyonel)
 
