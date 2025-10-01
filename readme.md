@@ -10,6 +10,7 @@
   
 - **Netcup indirim kodları** : (SINIRLI SAYIDA)
 36nc17592432444 36nc17592432443 36nc17592432442 36nc17592432441 36nc17592432440 36nc17593223300 36nc17593223301 36nc17593223302 36nc17593223303 36nc17593223304 36nc17593223305 36nc17593223306  36nc17593223307 36nc17593223308 36nc17593223309
+- Kod bulamazsanız telegramdan ulaşın https://t.me/enzifiri
 ## 🚀 Adım 1: n8n Kurulumu (Zorunlu)
 
 MobaxTerm ile sunucunuza bağlanın ve şu komutları çalıştırın:
