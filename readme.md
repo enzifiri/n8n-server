@@ -41,8 +41,9 @@ Domain sağlayıcınızın panelinden A kaydı ekleyin:
 Tip: A Record
 Host: @ 
 Değer: SUNUCU_IP_ADRESI
-TTL: 300
+TTL: Auto
 ```
+<img width="1189" height="145" alt="image" src="https://github.com/user-attachments/assets/1c4ad3de-ea43-4227-9c20-3390613c1124" />
 
 ### 2.2 DNS Kontrolü
 
