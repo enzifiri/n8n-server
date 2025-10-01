@@ -15,6 +15,7 @@
 MobaxTerm ile sunucunuza bağlanın ve şu komutları çalıştırın:
 
 ```bash
+apt install git
 git clone https://github.com/enzifiri/n8n-server
 cd n8n-server
 chmod +x setup.sh
