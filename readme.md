@@ -54,7 +54,8 @@ TTL: Auto
 ✅ **Yeşil tik ve sunucu IP'niz görünüyorsa** → Domain yapılandırmasına geçebilirsiniz  
 ❌ **Kırmızı X görünüyorsa** → 30-60 dakika bekleyin
 
-<img width="582" alt="DNS Kontrolü" src="https://github.com/user-attachments/assets/7aad1839-462d-491d-a8e3-90fb74ead77d" />
+<img width="583" height="199" alt="image" src="https://github.com/user-attachments/assets/e2c87d13-1f9a-4fba-b073-af6eb6a0ebe3" />
+
 
 ### 2.3 Domain Scriptini Çalıştırın
 
